@@ -53,7 +53,7 @@ function defineTarget() {
 
 function setHeader() {
     let image = headers[theme][Math.floor(Math.random() * headers[theme].length)];
-    fetch(`/assets/img/headers/${theme}/${image}`)
+    fetch(`/Contents/assets/img/headers/${theme}/${image}`)
         .then(function(response) {
             return response.blob();
         })

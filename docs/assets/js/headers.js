@@ -1,8 +1,15 @@
 const headers = {
     "spring": [
-        "witch.png",
         "cernunnos.png",
+        "djollfulin.png",
         "goat-man.png",
+        "goblins.png",
+        "knight.png",
+        "raven.png",
+        "treant.png",
+        "wanderer.png",
+        "warlock.png",
+        "witch.png",
     ]
 };
 let theme = null;
@@ -48,12 +55,12 @@ function defineTarget() {
     }
 
     let targetQuery = (new URLSearchParams(window.location.search)).get("target");
-    target = typeof targetQuery === "string" ? targetQuery : "banner";
+    target = typeof targetQuery === "string" ? targetQuery : "banner-header";
 }
 
 function setHeader() {
     let image = headers[theme][Math.floor(Math.random() * headers[theme].length)];
-    fetch(`/Contents/assets/img/headers/${theme}/${image}`)
+    fetch(`https://duralas.github.io/Contents/assets/img/headers/${theme}/${image}`)
         .then(function(response) {
             return response.blob();
         })

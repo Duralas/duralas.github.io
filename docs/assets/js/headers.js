@@ -10,6 +10,19 @@ const headers = {
         "wanderer.png",
         "warlock.png",
         "witch.png",
+    ],
+    "winter": [
+        "christmas_magic.png",
+        "christmas_tree.png",
+        "dragon.png",
+        "eagle.png",
+        "horses.png",
+        "reindeer.png",
+        "ruins.png",
+        "santa.png",
+        "sleigh.png",
+        "traveler.png",
+        "tree.png",
     ]
 };
 let theme = null;

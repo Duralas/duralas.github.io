@@ -32,10 +32,6 @@ let target = null;
     defineTheme();
     defineTarget();
     setHeader();
-
-    document.querySelector("#testme").addEventListener("click", function () {
-        setHeader();
-    });
 })();
 
 function defineTheme() {
@@ -73,7 +69,7 @@ function defineTarget() {
 
 function setHeader() {
     let image = headers[theme][Math.floor(Math.random() * headers[theme].length)];
-    fetch(`https://duralas.github.io/Contents/assets/img/headers/${theme}/${image}`)
+    fetch(`https://duralas.github.io/assets/img/headers/${theme}/${image}`)
         .then(function(response) {
             return response.blob();
         })
